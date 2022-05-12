@@ -10,19 +10,87 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-<main>
-      <div class="left">
-            <img src="img/knife.png" alt="Knife logo image">
-            <h1>Recipes</h1>
-            <p>Photo by Christian Mackie</p>
-      </div>
-      <div class="right">
-
-      </div>
-</main>
+      <main>
+            <div class="left">
+                  <img src="img/knife.png" alt="Knife logo image">
+                  <h1>Recipes</h1>
+                  <p>Photo by Christian Mackie</p>
+            </div>
+            <div class="right">
+                  <!-- Change text to account sign up -->
+                  <p>This will not sign you up for anything. The form doesn't actually submit any data to anything. But if you want to <em>pretend</em> to sign up for an account on our recipes website then enter your info below!</p>
+                  <form action="">
+                        <div class="form-input">
+                              <h2>Sign up for an account</h2>
+                              <div>
+                                    <label for="firstname">
+                                          First Name
+                                          <abbr title="required" aria-label="required">*</abbr>
+                                    </label>
+                                    <input type="text" name="firstname" id="lastname" required>
+                              </div>
+                              <div>
+                                    <label for="lastname">
+                                          Last Name
+                                          <abbr title="required" aria-label="required">*</abbr>
+                                    </label>
+                                    <input type="text" name="lastname" id="lastname" required>
+                              </div>
+                              <div>
+                                    <label for="email">
+                                          Email
+                                          <abbr title="required" aria-label="required">*</abbr>
+                                    </label>
+                                    <input type="email" name="email" id="email" required>
+                              </div>
+                              <div>
+                                    <label for="phonenum">Phone Number</label>
+                                    <input type="text" name="phonenum" id="phonenum">
+                              </div>
+                              <div>
+                                    <label for="password">
+                                          Password
+                                          <abbr title="required" aria-label="required">*</abbr>
+                                    </label>
+                                    <input type="password" name="password" id="password" required>
+                              </div>
+                              <div>
+                                    <label for="passwordconfirm">
+                                          Confirm Password
+                                          <abbr title="required" aria-label="required">*</abbr>
+                                    </label>
+                                    <input type="password" name="passwordconfirm" id="passwordconfirm" required>
+                              </div>
+                              <div>
+                                    <fieldset>
+                                          <legend>Email Newsletter</legend>
+                                          <p>
+                                                <input type="checkbox" name="weekly" id="weekly" checked>
+                                                <label for="weekly">Weekly Newsletter</label>
+                                          </p>
+                                          <p>
+                                                <input type="checkbox" name="monthly" id="monthly" checked>
+                                                <label for="monthly">Monthly Newsletter</label>
+                                          </p>
+                                          <p>
+                                                <input type="checkbox" name="promotions" id="promotions" checked>
+                                                <label for="promotions">Special Offers and Promotions</label>
+                                          </p>
+                                    </fieldset>
+                              </div>
+                        </div>
+                        <div class="form-submit">
+                              <div>
+                                    <button type="button">Register</button>
+                              </div>
+                        </div>
+                  </form>
+            </div>
+      </main>
 </body>
 
 </html>
