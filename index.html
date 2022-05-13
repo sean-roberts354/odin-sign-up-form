@@ -28,7 +28,10 @@
                         to anything. But if you want to <em>pretend</em> to sign up for an account on our recipes
                         website then enter your info below!</p>
                   <h2 class="header">Sign up for an account</h2>
-                  <form action="">
+                  <form action="/" method="post" id="form">
+                        <div class="instruction">
+                              <p>Items marked with * are required</p>
+                        </div>
                         <div class="text-input fname">
                               <label for="firstname">
                                     First Name
@@ -87,7 +90,7 @@
                         </div>
                   </form>
                   <div class="form-submit">
-                        <button type="button">Register</button>
+                        <button type="submit" form="form">Register</button>
                   </div>
             </div>
       </main>
