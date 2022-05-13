@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -74,6 +74,115 @@ select {
 }
 
 body {
-      font-family: 'Montserrat', sans-serif;
-      /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  width: 30vw;
+  min-height: 100vh;
+
+  background-image: url('../img/christian-mackie-kitchen-unsplash.jpg');
+  background-size: cover;
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 20vh;
+}
+
+.title img {
+  display: inline-block;
+  height: 100px;
+}
+
+.title h1 {
+  display: inline-block;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+
+}
+
+.left p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: whitesmoke;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  width: 70vw;
+  min-height: 100vh;
+
+  padding-left: 2rem;
+  padding-right: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.message {
+  font-size: 1.5rem;
+}
+
+.form-input {
+  display: grid;
+  grid-template: 
+    "header header" auto
+    "fname lname" auto
+    "email phone" auto
+    "pwd pwdconf" auto
+    "checkboxes checkboxes" auto;
+  
+  grid-gap: 1rem;
+}
+
+.text-input {
+}
+
+.header {
+  grid-area: header;
+}
+
+.fname {
+  grid-area: fname;
+}
+
+.lname {
+  grid-area: lname;
+}
+
+.email {
+  grid-area: email;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.pwd {
+  grid-area: pwd;
+}
+
+.pwdconf {
+  grid-area: pwdconf;
+}
+
+.checkboxes {
+  grid-area: checkboxes;
 }

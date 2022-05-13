@@ -16,56 +16,58 @@
 <body>
       <main>
             <div class="left">
-                  <img src="img/knife.png" alt="Knife logo image">
-                  <h1>Recipes</h1>
+                  <div class="title">
+                        <img src="img/logo.png" alt="Knife logo image">
+                        <h1>Recipes</h1>
+                  </div>
                   <p>Photo by Christian Mackie</p>
             </div>
             <div class="right">
                   <!-- Change text to account sign up -->
-                  <p>This will not sign you up for anything. The form doesn't actually submit any data to anything. But if you want to <em>pretend</em> to sign up for an account on our recipes website then enter your info below!</p>
+                  <p class="message">This will not sign you up for anything. The form doesn't actually submit any data to anything. But if you want to <em>pretend</em> to sign up for an account on our recipes website then enter your info below!</p>
                   <form action="">
                         <div class="form-input">
-                              <h2>Sign up for an account</h2>
-                              <div>
+                              <h2 class="header">Sign up for an account</h2>
+                              <div class="text-input fname">
                                     <label for="firstname">
                                           First Name
                                           <abbr title="required" aria-label="required">*</abbr>
                                     </label>
                                     <input type="text" name="firstname" id="lastname" required>
                               </div>
-                              <div>
+                              <div class="text-input lname">
                                     <label for="lastname">
                                           Last Name
                                           <abbr title="required" aria-label="required">*</abbr>
                                     </label>
                                     <input type="text" name="lastname" id="lastname" required>
                               </div>
-                              <div>
+                              <div class="text-input email">
                                     <label for="email">
                                           Email
                                           <abbr title="required" aria-label="required">*</abbr>
                                     </label>
                                     <input type="email" name="email" id="email" required>
                               </div>
-                              <div>
+                              <div class="text-input phone">
                                     <label for="phonenum">Phone Number</label>
                                     <input type="text" name="phonenum" id="phonenum">
                               </div>
-                              <div>
+                              <div class="text-input pwd">
                                     <label for="password">
                                           Password
                                           <abbr title="required" aria-label="required">*</abbr>
                                     </label>
                                     <input type="password" name="password" id="password" required>
                               </div>
-                              <div>
+                              <div class="text-input pwdconf">
                                     <label for="passwordconfirm">
                                           Confirm Password
                                           <abbr title="required" aria-label="required">*</abbr>
                                     </label>
                                     <input type="password" name="passwordconfirm" id="passwordconfirm" required>
                               </div>
-                              <div>
+                              <div class="checkboxes">
                                     <fieldset>
                                           <legend>Email Newsletter</legend>
                                           <p>
